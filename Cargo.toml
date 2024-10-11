@@ -1,0 +1,17 @@
+[package]
+name = "project-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+postgres = "0.19"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_derive = "1.0"
+actix-web = "4.9.0"
+actix-cors = "0.7.0"
+chrono = { version = "0.4.38", features = ["serde"] }
+env_logger = "0.11.5"
+dotenv = "0.15.0"
+uuid = { version = "1.10.0", features = ["serde", "v4"] }
+sqlx = { version = "0.8.2", features = ["runtime-async-std-native-tls", "postgres", "chrono", "uuid"] }
